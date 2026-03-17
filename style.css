@@ -431,6 +431,41 @@ body {
     color: var(--navy-deep);
 }
 
+/* --- COMPLIMENTS SECTION --- */
+.compliments-section {
+    min-height: auto !important;
+    padding: 2rem 1.5rem 5rem 1.5rem !important;
+}
+
+.compliments-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem 3rem;
+}
+
+.compliment-name {
+    font-family: var(--font-heading);
+    font-size: clamp(1.1rem, 3vw, 1.6rem);
+    color: var(--white);
+    letter-spacing: 2px;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.compliment-name::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.5;
+}
+
 /* --- FOOTER --- */
 .footer {
     padding-bottom: 120px;
