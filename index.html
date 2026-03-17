@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of Sujjad & Asma</title>
+    <meta name="description" content="We cordially invite you to the wedding of Sujjad and Asma">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Cover Page -->
+    <div id="cover-page" class="cover-page">
+        <!-- Top Ornament (Calligraphy) -->
+        <div class="envelope-top-ornament">
+            <svg width="400" height="80" viewBox="0 0 400 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Decorative Flourishes -->
+                <path d="M 40 45 Q 80 15 120 45 T 160 45" stroke="var(--gold)" stroke-width="1" fill="none" opacity="0.6"/>
+                <path d="M 360 45 Q 320 15 280 45 T 240 45" stroke="var(--gold)" stroke-width="1" fill="none" opacity="0.6"/>
+                <circle cx="40" cy="45" r="2" fill="var(--gold)" opacity="0.6"/>
+                <circle cx="360" cy="45" r="2" fill="var(--gold)" opacity="0.6"/>
+                
+                <!-- Full Calligraphy -->
+                <text x="200" y="52" font-family="'Amiri', serif" font-size="32" fill="var(--navy-mid)" text-anchor="middle">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</text>
+            </svg>
+        </div>
+
+        <div class="cover-content">
+            <h4 class="cover-pre-title-script">The Wedding Of</h4>
+
+            <div class="logo-wrapper">
+                <div class="logo-circle-ornament">
+                    <span class="logo-initials">S&amp;A</span>
+                </div>
+            </div>
+
+            <div class="elegant-names-script">
+                Sujjad &amp; Asma
+            </div>
+
+            <button id="view-invitation-btn" class="view-btn-simple">
+                View Invitation <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+        </div>
+
+        <!-- Bottom Ornament -->
+        <div class="envelope-bottom-ornament">
+            <svg width="100%" height="40" viewBox="0 0 800 40" preserveAspectRatio="none">
+                <path d="M 0 20 L 350 20 Q 400 0 450 20 L 800 20" stroke="var(--navy-mid)" stroke-width="1" fill="none" opacity="0.5"/>
+                <circle cx="400" cy="20" r="4" fill="var(--gold)" />
+                <circle cx="400" cy="20" r="1.5" fill="var(--navy-deep)" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Main Content Container (Hidden initially) -->
+    <div id="main-content" class="main-content hidden">
+
+        <!-- Section: Home -->
+        <section id="home" class="hero section">
+            <h2 class="hero-title reveal-up">Wedding Invitation</h2>
+
+            <div class="hero-image-wrapper reveal-zoom" style="transition-delay: 0.2s;">
+                <img src="images/couple.png" alt="Couple Illustration" class="circle-illustration">
+            </div>
+
+            <h1 class="couple-names reveal-up" style="transition-delay: 0.4s;">Sujjad &amp; Asma</h1>
+            <p class="wedding-date reveal-up gold-text" style="transition-delay: 0.6s;">SUNDAY • 19 APRIL 2026</p>
+
+            <div class="reveal-up" style="transition-delay: 0.8s; margin-bottom: 2rem;">
+                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=The+Wedding+of+Sujjad+and+Asma&dates=20260419T063000Z/20260419T133000Z&details=The+Wedding+of+Sujjad+and+Asma&location=https%3A%2F%2Fmaps.app.goo.gl%2FhesobenSREyJswHL8&sf=true&output=xml"
+                    target="_blank" class="btn-primary">
+                    <i class="far fa-calendar-plus" style="margin-right: 8px;"></i> Save The Date
+                </a>
+            </div>
+
+
+        </section>
+
+        <!-- Section: Greeting & Couple -->
+        <section id="bride" class="couple-section section">
+            <div class="glass-panel text-center reveal-up" style="max-width: 900px; margin-bottom: 3rem; width: 100%;">
+                <h2 class="arabic-text">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h2>
+                <h3 class="assalamualaikum">Assalamualaikum Warahmatullahi Wabarakatuh</h3>
+                <p class="greeting-desc">With all due respect, we cordially invite you and your family to join us in celebrating our wedding ceremony:</p>
+            </div>
+
+            <div class="couple-grid">
+                <div class="person-card glass-panel reveal-left">
+                    <img src="images/groom.png" alt="Groom Illustration" class="circle-illustration">
+                    <h2 class="person-name">Dr. N. Sujjad Bhukari</h2>
+                    <p class="person-title">B.U.M.S.,</p>
+                </div>
+
+                <div class="and-symbol reveal-zoom">&amp;</div>
+
+                <div class="person-card glass-panel reveal-right">
+                    <img src="images/bride.png" alt="Bride Illustration" class="circle-illustration">
+                    <h2 class="person-name">P. Asma Kouser</h2>
+                    <p class="person-title">B.Com.,</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Quote -->
+        <section id="quote" class="quote-section section">
+            <div class="glass-panel reveal-zoom" style="width: 100%;">
+                <h3 class="quote-title"><i class="fas fa-star" style="font-size: 0.8rem; vertical-align: middle; margin-right: 10px;"></i> Allah Subhanahu Wa Ta'ala Says <i class="fas fa-star" style="font-size: 0.8rem; vertical-align: middle; margin-left: 10px;"></i></h3>
+                <p class="arabic-quote">وَمِنْ عَايَتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَوَدَّةً وَرَحْمَةً إِنَّ فِي ذَلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ</p>
+                <p class="english-translation">"And one of His signs is that He created for you spouses from among yourselves so that you may find comfort in them. And He has placed between you compassion and mercy. Surely in this are signs for people who reflect."</p>
+                <p class="surah-ref">— Quran (Ar-Rum 30:21) —</p>
+            </div>
+        </section>
+
+        <!-- Section: Events -->
+        <section id="date" class="events-section section">
+            <h3 class="events-title reveal-up">Happy Moments</h3>
+
+            <div class="timer-container reveal-up">
+                <div class="time-circle">
+                    <span id="days" class="number">00</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="time-circle">
+                    <span id="hours" class="number">00</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="time-circle">
+                    <span id="minutes" class="number">00</span>
+                    <span class="label">Mins</span>
+                </div>
+                <div class="time-circle">
+                    <span id="seconds" class="number">00</span>
+                    <span class="label">Secs</span>
+                </div>
+            </div>
+
+            <h3 class="events-title reveal-up" style="font-size: 2.5rem; margin-top: 2rem;">In Sha Allah</h3>
+
+            <div class="events-grid">
+                <div class="event-card glass-panel reveal-left">
+                    <i class="fas fa-ring event-icon"></i>
+                    <h4 class="event-name">Nikah</h4>
+                    <p class="event-time"><i class="far fa-clock gold-text" style="margin-right: 8px;"></i> At 12:00 PM Sharp</p>
+                    <p class="event-location" style="height: 48px;">Thowheed Masjid,<br>Pernambut.</p>
+                    <a href="https://maps.app.goo.gl/5tsoD3dH5xb947326" target="_blank" class="btn-location">
+                        <i class="fas fa-map-marker-alt" style="margin-right: 6px;"></i> View Map
+                    </a>
+                </div>
+
+                <div class="event-card glass-panel reveal-right">
+                    <i class="fas fa-utensils event-icon"></i>
+                    <h4 class="event-name">Valima</h4>
+                    <p class="event-time"><i class="far fa-calendar gold-text" style="margin-right: 8px;"></i> On The Same Day</p>
+                    <p class="event-location" style="height: 48px;">Shaad Function Hall, V.Kota Road,<br>Pernambut.</p>
+                    <a href="https://maps.app.goo.gl/hesobenSREyJswHL8" target="_blank" class="btn-location">
+                        <i class="fas fa-map-marker-alt" style="margin-right: 6px;"></i> View Map
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer section">
+            <div class="glass-panel text-center reveal-up" style="max-width: 700px; padding: 3rem; width: 100%;">
+                <p class="footer-desc">Your esteemed presence is sincerely requested, and we look forward to sharing this special day with you and your family.</p>
+                <h3 class="arabic-text footer-alhamdulillah gold-gradient-text" style="font-size: 4rem;">اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ</h3>
+                <div class="couple-names" style="font-size: 2.5rem; margin-top: 1rem;">Sujjad &amp; Asma</div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Fixed Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="#home" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#bride" class="nav-item">
+            <i class="fas fa-heart"></i>
+            <span>Couple</span>
+        </a>
+        <a href="#date" class="nav-item">
+            <i class="far fa-calendar-check"></i>
+            <span>Events</span>
+        </a>
+    </nav>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
